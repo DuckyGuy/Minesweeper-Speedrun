@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 
 
@@ -5,6 +6,12 @@ public class Main {
         // System.out.println("Entering main menu...");
         // MainMenu menu = new MainMenu();
         // menu.displayMenu();
-        Game g=new Game(5,2);
+        Scanner in=new Scanner(System.in);
+
+        int X=in.nextInt();
+        int Y=in.nextInt();
+        in.nextLine();
+
+        Game g=new Game(10, 20, X, Y);
     }
 }
